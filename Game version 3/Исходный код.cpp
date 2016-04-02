@@ -371,6 +371,8 @@ int main()
 					 }
 					 break;
 		}
+
+
 		}
 		cout << "There is " << ChangingEnemy << " on heroes path!" << endl;
 		system("pause");
