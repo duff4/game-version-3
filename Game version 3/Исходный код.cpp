@@ -434,8 +434,17 @@ int main()
 					case (3) :
 					{
 								 Heal = 1 + rand() % 5;
-								 HeroHP = HeroHP + Heal + HeroIntelligence;//can heal more than a total hp
-								 cout << "Hero heal " << Heal +HeroIntelligence << " HP." << endl << "Now he has " << HeroHP << "HP" << endl;
+								 HeroHP = HeroHP + Heal + HeroIntelligence;
+								 cout << "Hero heal " << Heal + HeroIntelligence << " HP." << endl;
+								 if (HeroHP > 30 + HeroVitality)
+								 {
+									 HeroHP = 30 + HeroVitality;
+									 cout << "But it is too many for him.So Heroes Hp = " << HeroHP << endl;
+								 }
+								 else
+								 {
+									 cout << "His HP = " << HeroHP << endl;
+								 }
 								 ++BattleRound;
 								 if (FireBall > 0)
 								 {
@@ -472,6 +481,15 @@ int main()
 											 HeroHP = HeroHP + FirstSlotAbility;
 											 FirstSlotName = ItemNothing;
 											 FirstSlotAbility = ItemNothingAbility;
+											 if (HeroHP > 30 + HeroVitality)
+											 {
+												 HeroHP = 30 + HeroVitality;
+												 cout << "But it is too many for him.So Heroes Hp = " << HeroHP<<endl;
+											 }
+											 else
+											 {
+												 cout << "His HP = " << HeroHP<<endl;
+											 }
 											 break;
 								 }
 
@@ -481,6 +499,15 @@ int main()
 											  HeroHP = HeroHP + SecondSlotAbility;
 											  SecondSlotName = ItemNothing;
 											  SecondSlotAbility = ItemNothingAbility;
+											  if (HeroHP > 30 + HeroVitality)
+											  {
+												  HeroHP = 30 + HeroVitality;
+												  cout << "But it is too many for him.So Heroes Hp = " << HeroHP << endl;
+											  }
+											  else
+											  {
+												  cout << "His HP = " << HeroHP << endl;
+											  }
 											  break;
 								 }
 
@@ -490,6 +517,15 @@ int main()
 											  HeroHP = HeroHP + ThirdSlotAbility;
 											  ThirdSlotName = ItemNothing;
 											  ThirdSlotAbility = ItemNothingAbility;
+											  if (HeroHP > 30 + HeroVitality)
+											  {
+												  HeroHP = 30 + HeroVitality;
+												  cout << "But it is too many for him.So Heroes Hp = " << HeroHP << endl;
+											  }
+											  else
+											  {
+												  cout << "His HP = " << HeroHP << endl;
+											  }
 											  break;
 								 }
 
@@ -499,6 +535,15 @@ int main()
 											  HeroHP = HeroHP + FourthSlotAbility;
 											  FourthSlotName = ItemNothing;
 											  FourthSlotAbility = ItemNothingAbility;
+											  if (HeroHP > 30 + HeroVitality)
+											  {
+												  HeroHP = 30 + HeroVitality;
+												  cout << "But it is too many for him.So Heroes Hp = " << HeroHP << endl;
+											  }
+											  else
+											  {
+												  cout << "His HP = " << HeroHP << endl;
+											  }
 											  break;
 								 }
 
@@ -508,6 +553,15 @@ int main()
 											  HeroHP = HeroHP + FifthSlotAbility;
 											  FifthSlotName = ItemNothing;
 											  FifthSlotAbility = ItemNothingAbility;
+											  if (HeroHP > 30 + HeroVitality)
+											  {
+												  HeroHP = 30 + HeroVitality;
+												  cout << "But it is too many for him.So Heroes Hp = " << HeroHP << endl;
+											  }
+											  else
+											  {
+												  cout << "His HP = " << HeroHP << endl;
+											  }
 											  break;
 								 }
 
@@ -517,6 +571,15 @@ int main()
 											  HeroHP = HeroHP + SixthSlotAbility;
 											  SixthSlotName = ItemNothing;
 											  SixthSlotAbility = ItemNothingAbility;
+											  if (HeroHP > 30 + HeroVitality)
+											  {
+												  HeroHP = 30 + HeroVitality;
+												  cout << "But it is too many for him.So Heroes Hp = " << HeroHP << endl;
+											  }
+											  else
+											  {
+												  cout << "His HP = " << HeroHP << endl;
+											  }
 											  break;
 								 }
 
@@ -526,6 +589,15 @@ int main()
 											  HeroHP = HeroHP + SeventhSlotAbility;
 											  SeventhSlotName = ItemNothing;
 											  SecondSlotAbility = ItemNothingAbility;
+											  if (HeroHP > 30 + HeroVitality)
+											  {
+												  HeroHP = 30 + HeroVitality;
+												  cout << "But it is too many for him.So Heroes Hp = " << HeroHP << endl;
+											  }
+											  else
+											  {
+												  cout << "His HP = " << HeroHP << endl;
+											  }
 											  break;
 
 								 }
@@ -536,6 +608,15 @@ int main()
 											  HeroHP = HeroHP + EighthSlotAbility;
 											  EighthSlotName = ItemNothing;
 											  EighthSlotAbility = ItemNothingAbility;
+											  if (HeroHP > 30 + HeroVitality)
+											  {
+												  HeroHP = 30 + HeroVitality;
+												  cout << "But it is too many for him.So Heroes Hp = " << HeroHP << endl;
+											  }
+											  else
+											  {
+												  cout << "His HP = " << HeroHP << endl;
+											  }
 											  break;
 								 }
 
@@ -545,6 +626,15 @@ int main()
 											  HeroHP = HeroHP + NinthSlotAbility;
 											  NinthSlotName = ItemNothing;
 											  NinthSlotAbility = ItemNothingAbility;
+											  if (HeroHP > 30 + HeroVitality)
+											  {
+												  HeroHP = 30 + HeroVitality;
+												  cout << "But it is too many for him.So Heroes Hp = " << HeroHP << endl;
+											  }
+											  else
+											  {
+												  cout << "His HP = " << HeroHP << endl;
+											  }
 											  break;
 								 }
 
@@ -554,8 +644,18 @@ int main()
 											   HeroHP = HeroHP + TenthSlotAbility;
 											   TenthSlotName = ItemNothing;
 											   TenthSlotAbility = ItemNothingAbility;
+											   if (HeroHP > 30 + HeroVitality)
+											   {
+												   HeroHP = 30 + HeroVitality;
+												   cout << "But it is too many for him.So Heroes Hp = " << HeroHP << endl;
+											   }
+											   else
+											   {
+												   cout << "His HP = " << HeroHP << endl;
+											   }
 											   break;
 								 }
+										  
 									 break;
 								 }
 								 break;
